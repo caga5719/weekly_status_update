@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block header %} Welcome to Carlos Garcia's CSPB-3112 Website {% endblock %}
+
+{% block content %}
+    <div>
+        <table width="1000px" border="1px">
+            <tr>
+                <th> Week </th>
+                <th> Link to the Status Update </th>
+            </tr>
+            <tr>
+                <td>Week 2 (September 1 - September 7)</td>
+                <td><a href="Week_2">Week 2 Status</a></td>
+            </tr>
+            <tr>
+                <td>Week 3 (September 8 - September 14)</td>
+                <td><a href="Week_3">Week 3 Status</a></td>
+            </tr>
+            <tr>
+                <td>Week 4 (September 15 - September 21)</td>
+                <td><a href="Week_4">Week 4 Status</a></td>
+            </tr>
+            
+        </table>
+    </div>
+{% endblock %}
