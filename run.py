@@ -1,4 +1,4 @@
-from weekly_status import website_app
+from weekly_status import create_app
 
-app = website_app()
+app = create_app()
 
