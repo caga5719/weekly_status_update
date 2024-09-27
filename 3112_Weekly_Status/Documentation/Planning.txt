@@ -1,0 +1,6 @@
+Blueprint:
+    Need to be able to display weekly status updates
+    Need to be able to display project proposal
+    Need to be able to display home page with name and info as well as links to github, leetcode, and other useful websites
+    Need to be able toggle between status updates, porject proposal, and home page
+

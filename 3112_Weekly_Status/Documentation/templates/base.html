@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/prefix.css" />
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="header">{% block header %}{% endblock %}</h1>
+    </div>
+    <div class="nav_bar">
+        <div class="container">
+            <div class="box" onclick="location.href='/'">
+                Home
+            </div>
+            <div class="box" onclick="location.href='/project_proposal'">
+                Project Proposal
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>
