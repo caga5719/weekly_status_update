@@ -10,6 +10,10 @@ def home():
 def project_proposal():
     return render_template("project_proposal.html")
 
+@app.route('/book_report')
+def book_report():
+    return render_template("book_report.html")
+
 @app.route('/<week_chosen>')
 def weekly_status_update(week_chosen):
     return render_template(f"{week_chosen}.html")
