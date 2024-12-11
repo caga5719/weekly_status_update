@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+{% block title %} Week 14 Weekly Status Update {% endblock %}
+{% block header %}Week 14 Weekly Status Update {% endblock %}
+
+
+{% block content %}
+<h2>What I did last week:</h2>
+    <ul>
+        <li>Learned more about C++ compilation. Specifically how the pre-processor, compiler, assembler, and linker all work with one another. It was interesting to see how the compiler catches syntactical errors while the linker catches undefined references to functions not defined in the current 'translation unit' (cpp file).</li>
+        <li>Spent about 2 hours trying to solve a Neetcode.io problem named "Merge K Sorted Linked Lists". I ended up utilizing a merge sort algorithm to sort the linked lists together but for quite a while I was not passing the necessary tests. After quite a bit of time debugging I was able to find that I was not resetting (moving up) the current node pointer of my merged linked list in each recursion and, because of this, I was only getting 1 node returned in my sorted linked list. Silly mistake in hindsight.</li>
+    </ul>
+
+    <h2>What I plan to do this week:</h2>
+    <ul>
+        <li>Tackle 4 more lessons in my Neetcode.io class</li>
+        <ul>
+            <li>Its 50/50 if I will complete all the lessons and their respective neetode/leetcode questions before the end of the semester. However, I should be close.</li>
+        </ul>
+        <li>Work on my final project report</li>
+    </ul>
+
+    <h2>Impediment(s) in my way:</h2>
+    <li>Not really. Work is winding down for the year as our company's code freeze is next week.</li>
+
+    <h2>Reflections on the process I used last week:</h2>
+    <li>I like my process at this point. It all comes down to scheduling time before the week starts and sticking to that very schedule.</li>
+{% endblock %}

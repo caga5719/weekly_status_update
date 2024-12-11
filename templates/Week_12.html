@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+{% block title %} Week 12 Weekly Status Update {% endblock %}
+{% block header %}Week 12 Weekly Status Update {% endblock %}
+
+
+{% block content %}
+<h2>What I did last week:</h2>
+    <ul>
+        <li>Completed Neetcode lessons on Insertion sort and Merge sort</li>
+        <li>Started on my book report</li>
+        <li>I had to spend more time at work than I would've liked as my team is trying to get certain development work and updates completed before our code freeze on December 13th.</li>
+        <ul>
+            <li>One of the updates I'm working on is a adding 2 API calls to a process we're automating. One will generate a new work ticket (a UI) that will be used as a manual quality control step and then be linked to the original work ticket that was submitted in the other API call. A major part of getting these API calls to work was looking up how to parse, stringify, and build JSON payloads using Groovy and Javascript. Since the platform we're using (Camunda) supports JSR-223 compatible programming languages I had to look up creating Spin objects to house the data and pass it along to scripts that used different languages. For instance, a JSON object in Groovy/Java will be handled and manipulated differently then one used in Javascript, hence the need to be able to serialize and deserialize the data using a Camunda spin object. This work took up most of time in the afternoons last week along with other stories I had to work on.</li>
+        </ul>
+    </ul>
+
+    <h2>What I plan to do this week:</h2>
+    <ul>
+        <li>Complete lessons on Quick Sort, Bucket Sort, and Binary Search</li>
+        <li>Continue working on my book report</li>
+        <li>Continue working on "Pan Out" project</li>
+        
+    </ul>
+
+    <h2>Impediment(s) in my way:</h2>
+    <li>I have friends coming up this weekend to go to a concert Friday, roam the city Saturday, and catch the Broncos game on Sunday. Knowing this and the fact that my work schedule is picking up a little bit before my companies' code freeze. Next week will be difficult to make time for my goals in this class, however, it is not impossible.</li>
+
+    <h2>Reflections on the process I used last week:</h2>
+    <li>Nothing much to improve on for this class alone besides keeping to my schedule. As for my job, this class, and future projects I work on, I need to be able to dive into documentation from the get go when I have an issue or even before I start working on a feature or update. I having a strong foundation of the tools you're using will save you more time developing or troubleshooting versus just winging it with what you think you know.</li>
+{% endblock %}
