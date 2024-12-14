@@ -14,6 +14,10 @@ def project_proposal():
 def book_report():
     return render_template("book_report.html")
 
+@app.route('/final_project_report')
+def book_report():
+    return render_template("final_project_report.html")
+
 @app.route('/<week_chosen>')
 def weekly_status_update(week_chosen):
     return render_template(f"{week_chosen}.html")
